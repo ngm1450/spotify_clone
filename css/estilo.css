@@ -81,6 +81,10 @@ nav.navbar-transparente{
     color: white;
 }
 
+.carousel-control-next, .carousel-control-prev{
+    width: 5%;
+}
+
 /* Serviços
 -----------------------*/
 .caixa{
