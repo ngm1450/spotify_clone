@@ -1,0 +1,13 @@
+/*
+*
+* @author Nícolas Georgeos Mantzos
+*/
+
+/* Layout
+------------------*/
+body{
+    background: url('../img/capa.png'), /*1ª imagem*/
+                url('../img/ruido.png'), /*2ª imagem*/
+                linear-gradient(50deg,#ff4169,#72c6f8); /*3ª imagem*/
+                background-attachment: fixed;                        
+}   
