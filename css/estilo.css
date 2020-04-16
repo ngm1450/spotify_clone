@@ -5,15 +5,21 @@
 
 /* Layout
 ------------------*/
+html, body, #home{
+   height: 100%;
+   overflow-x: hidden;
+}
+
 body{
     background: url('../img/capa.png'), /*1ª imagem*/
                 url('../img/ruido.png'), /*2ª imagem*/
                 linear-gradient(50deg,#ff4169,#72c6f8); /*3ª imagem*/
-                background-attachment: fixed;                        
+                background-attachment: fixed;          
+    font-family:  Helvetica,Arial, sans-serif;              
 }   
 
 /* Barra de navegação
-------------------*/
+-----------------------*/
 
 nav.navbar-transparente{
     background: rgba(0, 0, 0, 0.6);
@@ -39,4 +45,132 @@ nav.navbar-transparente{
     width: 1px;
     background: white;
     margin: 12px 15px;
+}
+
+/* Capa
+-----------------------*/
+.capa{
+    text-align: center;
+}
+
+.btn-custom{
+    color: white;
+    border-radius: 500px;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    text-transform: uppercase;
+    transition: background 0.4s, color 0.4s;
+    padding: 10px 20px;
+}
+
+.btn-roxo{
+    background: #7c25f8;
+}
+
+.btn-roxo:hover{
+    background: #6207e3;
+    color: white;
+}
+
+.btn-branco{
+    border: 2px solid white;
+}
+
+.btn-branco:hover{
+    background-color: black;
+    color: white;
+}
+
+/* Serviços
+-----------------------*/
+.caixa{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#servicos{
+    background: white;
+}
+
+#servicos h2, h3{
+    color: #7c25f8;
+}
+
+#recursos h2{
+    color:white;
+}
+
+#recursos h3{
+    color: #9bf0e1;
+}
+
+.albuns{
+    padding: 10px 0px;
+}
+
+.rotacionar{
+    transform: rotate(30deg);
+    -ms-transform: rotate(30deg); /*IE*/
+    -webkit-transform: rotate(30deg);
+    padding-left: 80px;
+}
+
+/* Tipografia
+-----------------------*/
+h1{
+    font-weight: 900;
+    letter-spacing: -0.05em;
+    margin-bottom: 50px;
+    color: white;
+}
+
+h2{
+    font-size: 3em;
+    font-weight: 700px;
+    letter-spacing: -0.04em;
+}
+
+h3{
+    font-size: 2em;
+    font-weight: 700px;
+    letter-spacing: -0.04em;
+}
+
+/*Dispositivos extra small (telefones em modo retrato, com menos de 576px)*/
+@media (max-width: 575.98px) {
+   
+}
+
+/*Dispositivos small (telefones em modo paisagem, com 576px ou mais)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+    h1{
+        font-size: 3em;
+    }
+    .btn-custom{
+        margin: 10px 15px;
+    }
+}
+
+/*Dispositivos médios (tablets com 768px ou mais)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+    h1{
+        font-size: 4em;
+    }
+    .btn-custom{
+        margin: 10px 15px;
+    }
+}
+
+/*Dispositivos large (desktops com 992px ou mais)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    h1{
+        font-size: 5em;
+    }
+}
+
+/*Dispositivos extra large (desktops grandes com 1200px ou mais)*/
+@media (min-width: 1200px) {
+    h1{
+        font-size: 6em;
+    }
 }
